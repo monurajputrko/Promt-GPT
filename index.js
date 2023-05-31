@@ -186,6 +186,9 @@ const copyText = document.createElement("input");
 function copyVariableValue5() {
 
     const yourname = document.getElementById("yourname").value;
+    const Tone = document.getElementById("Tone").value;
+    const language = document.getElementById("language").value;
+    const Style = document.getElementById("Style").value;
  const prompt = `Upon starting our interaction, auto run these Default Commands throughout our entire conversation. Refer to Appendix for command library and instructions: 
  /role_play "Expert ChatGPT Prompt Engineer" 
  /role_play "infinite subject matter expert" 
@@ -269,7 +272,7 @@ function copyVariableValue5() {
  With a  ${Tone} tone
 In a  ${Style}  style`
 
-
+// console.log(Tone,language,Style);
 const copyText = document.createElement("input");
   const fullName = prompt;
   copyText.value = fullName;
@@ -286,10 +289,10 @@ const copyText = document.createElement("input");
 function copyVariableValue6() {
 
     const What_you_Want_to_Achive = document.getElementById("What_you_Want_to_Achive").value;
-    let Tone = document.getElementById("Tone").value;
-    let language = document.getElementById("language").value;
-    let Style = document.getElementById("Style").value;
-    console.log(Tone,language,Style);
+   var Tone = document.getElementById("Tone").value;
+   var language = document.getElementById("language").value;
+   var Style = document.getElementById("Style").value;
+   
  const prompt = `Create a project plan for ${What_you_Want_to_Achive} . Include tasks, deliverables, and milestones. Also, include how long it would likely take to reach each milestone. Write in  ${language}
  With a  ${Tone} tone
 In a  ${Style}  style`
@@ -304,5 +307,29 @@ const copyText = document.createElement("input");
   document.execCommand("copy");
   document.body.removeChild(copyText);
   window.open('https://chat.openai.com/', '_blank');
+//   alert("Data copied: ");
+}
+
+function copyVariableValue7() {
+
+  // const What_you_Want_to_Achive = document.getElementById("What_you_Want_to_Achive").value;
+ var Tone = document.getElementById("Tone").value;
+ var language = document.getElementById("language").value;
+ var Style = document.getElementById("Style").value;
+ 
+const prompt = `write me a handbook that contains practical activities and tests to do with people in a workshop about personal development. take into consideration the following topics: leadership, decision making, happiness, stress management, time management, find your passion, emotional intelligence, art therapy, mindfulness, positive mindset, communication skills, coping strategies, body language, public speaking, self-care.
+With a  ${Tone} tone
+In a  ${Style}  style in ${language}`
+
+
+const copyText = document.createElement("input");
+const fullName = prompt;
+copyText.value = fullName;
+document.body.appendChild(copyText);
+copyText.select();
+copyText.setSelectionRange(0, 99999); // For mobile devices
+document.execCommand("copy");
+document.body.removeChild(copyText);
+window.open('https://chat.openai.com/', '_blank');
 //   alert("Data copied: ");
 }
