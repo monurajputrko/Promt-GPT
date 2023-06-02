@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Option Example</title>
+</head>
+<body>
+  <div class="inputbox">
+    <select id="language" name="Language" class="form-select">
+      <!-- Language options -->
+      <option value="English">English</option>
+      <option value="Marathi">Marathi</option>
+      <option value="hindi">Hindi</option>
+      <option value="Bengali">Bengali</option>
+      <option value="Punjabi">Punjabi</option>
+      <option value="Gujarati">Gujarati</option>
+      <option value="Oriya">Oriya</option>
+      <option value="Tamil">Tamil</option>
+      <option value="Telugu">Telugu</option>
+      <option value="Kannada">Kannada</option>
+      <option value="Malayalam">Malayalam</option>
+      <option value="Germen">Germen</option>
+      <option value="Spanish">Spanish</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <select name="Tone" id="Tone" class="form-select">
+      <!-- Tone options -->
+      <option value="cold">Cold</option>
+      <option value="confident">Confident</option>
+      <option value="cynical">Cynical</option>
+      <option value="emotional">Emotional</option>
+      <option value="empathetic">Empathetic</option>
+      <option value="formal">Formal</option>
+      <option value="friendly">Friendly</option>
+      <option value="humorous">Humorous</option>
+      <option value="informal">Informal</option>
+      <option value="ironic">Ironic</option>
+      <option value="optimistic">Optimistic</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <select name="Style" id="Style" class="form-select">
+      <!-- Style options -->
+      <option value="conversational">Conversational</option>
+      <option value="creative">Creative</option>
+      <option value="critical">Critical</option>
+      <option value="descriptive">Descriptive</option>
+      <option value="epigrammatic">Epigrammatic</option>
+      <option value="epistolary">Epistolary</option>
+      <option value="expository">Expository</option>
+      <option value="informative">Informative</option>
+      <option value="instructive">Instructive</option>
+      <option value="journalistic">Journalistic</option>
+      <option value="metaphorical">Metaphorical</option>
+      <option value="narrative">Narrative</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <input onclick="copyVariableValue10()" type="button" value="submit">
+  </div>
+  <div class="inputbox">
+    <select id="languagee" name="Language" class="form-select">
+      <!-- Language options -->
+      <option value="English">English</option>
+      <option value="Marathi">Marathi</option>
+      <option value="hindi">Hindi</option>
+      <option value="Bengali">Bengali</option>
+      <option value="Punjabi">Punjabi</option>
+      <option value="Gujarati">Gujarati</option>
+      <option value="Oriya">Oriya</option>
+      <option value="Tamil">Tamil</option>
+      <option value="Telugu">Telugu</option>
+      <option value="Kannada">Kannada</option>
+      <option value="Malayalam">Malayalam</option>
+      <option value="Germen">Germen</option>
+      <option value="Spanish">Spanish</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <select name="Tone" id="Tonee" class="form-select">
+      <!-- Tone options -->
+      <option value="cold">Cold</option>
+      <option value="confident">Confident</option>
+      <option value="cynical">Cynical</option>
+      <option value="emotional">Emotional</option>
+      <option value="empathetic">Empathetic</option>
+      <option value="formal">Formal</option>
+      <option value="friendly">Friendly</option>
+      <option value="humorous">Humorous</option>
+      <option value="informal">Informal</option>
+      <option value="ironic">Ironic</option>
+      <option value="optimistic">Optimistic</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <select name="Style" id="Stylee" class="form-select">
+      <!-- Style options -->
+      <option value="conversational">Conversational</option>
+      <option value="creative">Creative</option>
+      <option value="critical">Critical</option>
+      <option value="descriptive">Descriptive</option>
+      <option value="epigrammatic">Epigrammatic</option>
+      <option value="epistolary">Epistolary</option>
+      <option value="expository">Expository</option>
+      <option value="informative">Informative</option>
+      <option value="instructive">Instructive</option>
+      <option value="journalistic">Journalistic</option>
+      <option value="metaphorical">Metaphorical</option>
+      <option value="narrative">Narrative</option>
+    </select>
+  </div>
+  <div class="inputbox">
+    <input onclick="copyVariableValue1()" type="button" value="submit">
+  </div>
+  
+  <script>
+    function copyVariableValue10() {
+    const language = document.getElementById("language").value;
+    const tone = document.getElementById("Tone").value;
+    const style = document.getElementById("Style").value;
+  
+      console.log("Language:", language);
+      console.log("Tone:", tone);
+      console.log("Style:", style);
+      
+      // Perform additional actions here based on the selected options
+    }
+    function copyVariableValue1() {
+     const language = document.getElementById("languagee").value;
+     const tone = document.getElementById("Tonee").value;
+     const style = document.getElementById("Stylee").value;
+  
+      console.log("Language:", language);
+      console.log("Tone:", tone);
+      console.log("Style:", style);
+      
+      // Perform additional actions here based on the selected options
+    }
+  </script>
+  
+</body>
+</html>

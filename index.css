@@ -9,13 +9,15 @@ body {
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  /* background: linear-gradient(45deg, greenyellow, dodgerblue); */
   font-family: "Sansita Swashed", cursive;
 }
 nav{
     position: absolute;
     top: 10%;
     left: 10%;
+    /* background: linear-gradient(45deg, greenyellow, dodgerblue); */
+    font-family: "Sansita Swashed", cursive;
   }
   
 #main{
@@ -30,6 +32,7 @@ nav{
   background: #fff;
   border-radius: 10px;
   margin: 3%;
+  border: 2px solid black;
 }
 .center h1 {
   font-size: 2em;
