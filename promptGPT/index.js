@@ -7,7 +7,7 @@
 
 //   // Add the random color class to the current div
 //   divs[i].classList.add(randomColorClass);
-// }
+// }   
 
 function copyVariableValue() {
 
